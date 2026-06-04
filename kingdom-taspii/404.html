@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - The Page Vanished</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a0f2e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      color: #e8e0f0;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      animation: float 6s ease-in-out infinite;
+    }
+    .emoji { font-size: 80px; margin-bottom: 20px; display: block; }
+    h1 { font-size: 64px; margin-bottom: 10px; color: #d4a84b; }
+    p { font-size: 20px; opacity: 0.8; margin-bottom: 30px; }
+    a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: linear-gradient(135deg, rgba(212,168,75,0.15), rgba(212,168,75,0.05));
+      border: 1px solid #d4a84b;
+      color: #d4a84b;
+      font-family: 'Cinzel Decorative', serif;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 16px;
+    }
+    a:hover {
+      background: linear-gradient(135deg, rgba(212,168,75,0.35), rgba(212,168,75,0.15));
+      box-shadow: 0 0 25px rgba(212,168,75,0.4);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">👑</div>
+    <h1>404</h1>
+    <p>The page you seek has vanished into the kingdom's mist...</p>
+    <a href="/">← Return to The Kingdom</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build outputs
+dist/
+build/
+node_modules/
+
+# Deployment
+.vercel/
+.netlify/
+.firebase/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# System
+Thumbs.db

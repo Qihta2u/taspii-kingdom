@@ -1,0 +1,26 @@
+{
+  "name": "kingdom-of-taspii",
+  "version": "1.0.0",
+  "description": "An interactive magical birthday experience for Princess Taspii with 12 scenes, games, and animations",
+  "author": "Athiq",
+  "license": "MIT",
+  "homepage": "https://yourdomain.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kingdom-taspii.git"
+  },
+  "keywords": [
+    "birthday",
+    "interactive",
+    "princess",
+    "html5",
+    "animation",
+    "games"
+  ],
+  "scripts": {
+    "serve": "python -m http.server 8000",
+    "deploy:netlify": "echo 'Deploy to Netlify using web UI'",
+    "deploy:vercel": "echo 'Deploy to Vercel using CLI'",
+    "deploy:github": "echo 'Deploy to GitHub Pages'"
+  }
+}

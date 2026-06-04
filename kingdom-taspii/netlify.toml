@@ -1,0 +1,32 @@
+# Netlify Configuration
+
+[build]
+  # No build process needed - pure HTML/CSS/JS
+  command = ""
+  publish = "."
+
+[context.production]
+  # Production settings
+  [context.production.environment]
+    NETLIFY_USE_YARN = "false"
+
+[[redirects]]
+  # Redirect 404s to index for SPA support (if needed)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Cache static assets
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  # Cache busting for other files
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
